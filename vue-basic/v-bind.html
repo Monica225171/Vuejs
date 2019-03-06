@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>v-bind起步</title>
+		<!-- 通过CDN引入Vue.js -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+		<div id="app">		
+			<img :src="avatar" />
+			<a v-bind:href="url">{{website}}</ a>
+			<h1>{{name}}</1>
+		</div>
+		<script type="text/javascript">
+			//实例化一个对象
+			var app = new Vue({
+				el: '#app',
+				data: {
+					name:'霍华德·马克斯',
+					website:'周期',
+					url:'https://book.douban.com/subject/30446669',
+					avatar:'https://img3.doubanio.com/view/subject/m/public/s29952684.jpg'
+				}
+			})
+		</script>
+	</body>
+</html>
